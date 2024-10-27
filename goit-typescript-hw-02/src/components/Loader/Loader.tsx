@@ -1,7 +1,7 @@
 import { Vortex } from "react-loader-spinner";
 import "./Loader.module.css";
 
-const Loader = () => {
+const Loader: React.FC = () => {
   return (
     <Vortex
       visible={true}

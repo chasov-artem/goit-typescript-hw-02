@@ -42,3 +42,7 @@ export interface ImageModalProps {
   onRequestClose: () => void;
   selectedImage: Image | null;
 }
+
+export interface loadMoreBtnProps {
+  handleChangePage: () => void;
+}
