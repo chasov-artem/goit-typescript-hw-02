@@ -37,7 +37,6 @@ export interface ImageGalleryProps {
 }
 
 export interface ImageModalProps {
-  image: Image;
   isOpen: boolean;
   onRequestClose: () => void;
   selectedImage: Image | null;
@@ -45,4 +44,12 @@ export interface ImageModalProps {
 
 export interface loadMoreBtnProps {
   handleChangePage: () => void;
+}
+
+export interface SearchBarProps {
+  setQuery: (query: string) => void;
+}
+
+export interface FormValues {
+  query: string;
 }
