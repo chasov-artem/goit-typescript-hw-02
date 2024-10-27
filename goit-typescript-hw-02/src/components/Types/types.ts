@@ -1,5 +1,6 @@
 export interface ImageUrls {
   small: string;
+  full: string;
 }
 
 export interface ImageLinks {
@@ -33,4 +34,11 @@ export interface ImageCardProps {
 export interface ImageGalleryProps {
   images: Image[];
   openModal: (image: Image) => void;
+}
+
+export interface ImageModalProps {
+  image: Image;
+  isOpen: boolean;
+  onRequestClose: () => void;
+  selectedImage: Image | null;
 }
