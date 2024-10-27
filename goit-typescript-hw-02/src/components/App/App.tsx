@@ -54,9 +54,13 @@ const App: React.FC = () => {
   };
 
   const handleSearch = (searchQuery: string) => {
-    setQuery(searchQuery);
-    setPage(1);
-    setImages([]);
+    if (searchQuery !== query) {
+      setQuery(searchQuery);
+      setPage(1);
+      setImages([]);
+    } else {
+      setPage(1);
+    }
   };
 
   const openModal = (image: Image) => {
