@@ -1,8 +1,12 @@
 import styles from "./ImageGallery.module.css";
 import ImageCard from "../ImageCard/ImageCard";
+import { Image, ImageGalleryProps } from "../Types/types";
 
-const ImageGallery = ({ images, openModal }) => {
-  const handleImageClick = (event, image) => {
+const ImageGallery: React.FC<ImageGalleryProps> = ({ images, openModal }) => {
+  const handleImageClick = (
+    event: React.MouseEvent<HTMLLIElement>,
+    image: Image
+  ) => {
     event.preventDefault();
     openModal(image);
   };

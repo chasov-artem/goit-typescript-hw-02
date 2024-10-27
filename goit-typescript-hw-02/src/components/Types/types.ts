@@ -29,3 +29,8 @@ export interface FetchImagesResponse {
 export interface ImageCardProps {
   image: Image;
 }
+
+export interface ImageGalleryProps {
+  images: Image[];
+  openModal: (image: Image) => void;
+}
