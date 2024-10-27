@@ -1,0 +1,51 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #3949ab;
+  padding: 20px;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+
+header form {
+  display: flex;
+  justify-content: center;
+}
+
+input[name="query"] {
+  width: 300px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-size: 16px;
+}
+
+button[type="submit"] {
+  margin-left: 10px;
+  padding: 10px 20px;
+  border-radius: 4px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button[type="submit"]:hover {
+  background-color: #f50057;
+}

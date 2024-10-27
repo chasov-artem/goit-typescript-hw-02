@@ -1,21 +1,21 @@
 import axios from "axios";
 import toast from "react-hot-toast";
 
-interface ImageUrls {
+export interface ImageUrls {
   small: string;
 }
 
-interface ImageLinks {
+export interface ImageLinks {
   html: string;
 }
 
-interface User {
+export interface User {
   updated_at: string;
   name: string;
   username: string;
 }
 
-interface Image {
+export interface Image {
   id: string;
   alt_description: string | null;
   urls: ImageUrls;
@@ -24,7 +24,7 @@ interface Image {
   user: User;
 }
 
-interface FetchImagesResponse {
+export interface FetchImagesResponse {
   images: Image[];
   totalPages: number;
 }
