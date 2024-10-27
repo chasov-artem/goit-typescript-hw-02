@@ -1,17 +1,13 @@
-import { Vortex } from "react-loader-spinner";
-import "./Loader.module.css";
+import { ClipLoader } from "react-spinners";
+import styles from "./Loader.module.css";
+import React from "react";
 
 const Loader: React.FC = () => {
   return (
-    <Vortex
-      visible={true}
-      height="180"
-      width="180"
-      ariaLabel="vortex-loading"
-      wrapperStyle={{}}
-      wrapperClass="vortex-wrapper"
-      colors={["blue", "yellow", "red", "green", "purple", "orange"]}
-    />
+    <div className={styles.loaderWrapper}>
+      <ClipLoader color="#3498db" size={150} />
+    </div>
   );
 };
+
 export default Loader;
