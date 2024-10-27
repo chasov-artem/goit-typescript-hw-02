@@ -1,5 +1,7 @@
+import { ImageCardProps } from "../Types/types";
 import "./ImageCard.module.css";
-const ImageCard = ({ image }) => {
+
+const ImageCard: React.FC<ImageCardProps> = ({ image }) => {
   return (
     <div>
       <a href={image.links?.html} target="_blank" rel="noopener noreferrer">

@@ -9,7 +9,7 @@ import ImageModal from "../ImageModal/ImageModal";
 import ReactModal from "react-modal";
 import { Toaster } from "react-hot-toast";
 import ErrorMessage from "../ErrorMessage/ErrorMessage";
-import { Image } from "../Services/api";
+import { Image } from "../Types/types";
 
 ReactModal.setAppElement("#root");
 
