@@ -1,5 +1,3 @@
 {
-  "rewrites": [
-    { "source": "/(.*)", "destination": "/projects/goit-typescript-hw-02/" }
-  ]
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
 }
