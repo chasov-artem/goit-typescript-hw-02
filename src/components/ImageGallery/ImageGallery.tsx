@@ -12,7 +12,7 @@ const ImageGallery: React.FC<ImageGalleryProps> = ({ images, openModal }) => {
   };
 
   return (
-    <div>
+    <div className={styles.galleryContainer}>
       <ul className={styles.ul}>
         {images.map((image) => (
           <li

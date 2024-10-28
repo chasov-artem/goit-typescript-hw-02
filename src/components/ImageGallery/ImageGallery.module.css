@@ -1,31 +1,24 @@
-ul {
+.galleryContainer {
   display: flex;
   flex-wrap: wrap;
-  list-style: none;
-  padding: 0;
+  gap: 16px;
   justify-content: center;
-  gap: 120px;
+  margin: 20px 0;
 }
 
-li.image-item {
-  margin: 10px;
-  flex-basis: calc(33.333% - 20px);
-  box-sizing: border-box;
+.ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+  padding: 0;
+  list-style: none;
 }
 
-li.image-item img {
-  max-width: 100%;
-  border-radius: 8px;
-  transition: transform 0.3s ease;
+.li {
   cursor: pointer;
+  transition: transform 0.2s;
 }
 
-li.image-item img:hover {
+.li:hover {
   transform: scale(1.05);
-}
-
-p {
-  text-align: center;
-  font-size: 14px;
-  color: #555;
 }
